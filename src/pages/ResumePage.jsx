@@ -440,9 +440,29 @@ export default function ResumePage({ src }) {
             margin: 0 0 8px 8px !important;
           }
 
-          .resume-card { height: 86px !important; }
+          .resume-card { 
+            height: 82px !important; 
+          }
 
-          .resume-title { font-size: 38px !important; }
+          .resume-card-wrap.active .resume-card {
+            height: 96px !important;
+          }
+
+          .resume-title { 
+            font-size: 36px !important; 
+          }
+
+          .resume-subtitle {
+            font-size: 20px !important;
+          }
+
+          .resume-rank-label {
+            font-size: 22px !important;
+          }
+
+          .resume-rank-number {
+            font-size: 56px !important;
+          }
 
           .resume-detail-panel {
             position: relative !important;
@@ -452,6 +472,53 @@ export default function ResumePage({ src }) {
             min-height: unset !important;
             margin: 8px 14px 16px !important;
             pointer-events: all !important;
+          }
+
+          .resume-detail-top {
+            grid-template-columns: 50px 1fr auto;
+            min-height: 70px;
+            padding: 0 12px;
+            gap: 10px;
+          }
+
+          .resume-detail-top-index {
+            font-size: 34px;
+          }
+
+          .resume-detail-top-title {
+            font-size: 28px;
+          }
+
+          .resume-detail-top-progress {
+            font-size: 32px;
+          }
+
+          .resume-detail-row {
+            grid-template-columns: 40px 1fr auto;
+            min-height: 50px;
+            padding: 0 10px;
+            gap: 10px;
+          }
+
+          .resume-detail-row-index {
+            font-size: 22px;
+          }
+
+          .resume-detail-row-title {
+            font-size: 22px;
+          }
+
+          .resume-detail-status {
+            font-size: 18px;
+            padding: 5px 10px;
+          }
+
+          .resume-detail-bottom-title {
+            font-size: 24px;
+          }
+
+          .resume-detail-bullet {
+            font-size: 17px;
           }
 
           .resume-mobile-controls {
@@ -465,6 +532,58 @@ export default function ResumePage({ src }) {
             justify-content: flex-start;
             gap: 8px;
             pointer-events: all;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .resume-list-tag {
+            font-size: 48px !important;
+          }
+
+          .resume-card {
+            height: 74px !important;
+          }
+
+          .resume-card-wrap.active .resume-card {
+            height: 86px !important;
+          }
+
+          .resume-title {
+            font-size: 30px !important;
+          }
+
+          .resume-subtitle {
+            font-size: 18px !important;
+          }
+
+          .resume-rank-label {
+            font-size: 20px !important;
+          }
+
+          .resume-rank-number {
+            font-size: 48px !important;
+          }
+
+          .resume-detail-top-title {
+            font-size: 22px;
+          }
+
+          .resume-detail-row-title {
+            font-size: 18px;
+          }
+
+          .resume-detail-bullet {
+            font-size: 15px;
+          }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+          .resume-stack {
+            transform: scale(0.88);
+          }
+          .resume-detail-panel {
+            right: 2vw;
+            width: min(42vw, 580px);
           }
         }
 
