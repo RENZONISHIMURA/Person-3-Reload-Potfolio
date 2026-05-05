@@ -477,9 +477,26 @@ export default function SideProjPage() {
             margin: 0 0 8px 8px !important;
           }
 
-          .sp-card { height: 80px !important; }
+          .sp-card { 
+            height: 76px !important; 
+          }
 
-          .sp-title { font-size: 28px !important; }
+          .sp-card-wrap.active .sp-card {
+            height: 88px !important;
+          }
+
+          .sp-title { 
+            font-size: 26px !important; 
+          }
+
+          .sp-lang-badge {
+            font-size: 16px !important;
+            padding: 3px 8px !important;
+          }
+
+          .sp-subtitle {
+            font-size: 16px !important;
+          }
 
           .sp-detail-panel {
             position: relative !important;
@@ -491,6 +508,38 @@ export default function SideProjPage() {
             min-height: unset !important;
             margin: 8px 14px 16px !important;
             pointer-events: all !important;
+          }
+
+          .sp-detail-top {
+            grid-template-columns: 40px 1fr auto;
+            min-height: 60px;
+            padding: 0 12px;
+            gap: 8px;
+          }
+
+          .sp-detail-top-index {
+            font-size: 28px;
+          }
+
+          .sp-detail-top-title {
+            font-size: 20px;
+          }
+
+          .sp-detail-top-lang {
+            font-size: 24px;
+          }
+
+          .sp-detail-desc-text {
+            font-size: 16px;
+          }
+
+          .sp-tag {
+            font-size: 14px;
+          }
+
+          .sp-github-btn {
+            font-size: 18px;
+            padding: 10px 20px;
           }
 
           .sp-footer { display: none; }
@@ -506,6 +555,44 @@ export default function SideProjPage() {
             justify-content: flex-start;
             gap: 8px;
             pointer-events: all;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .sp-list-tag {
+            font-size: 48px !important;
+          }
+
+          .sp-card {
+            height: 68px !important;
+          }
+
+          .sp-card-wrap.active .sp-card {
+            height: 78px !important;
+          }
+
+          .sp-title {
+            font-size: 22px !important;
+          }
+
+          .sp-lang-badge {
+            font-size: 14px !important;
+          }
+
+          .sp-subtitle {
+            font-size: 14px !important;
+          }
+
+          .sp-detail-top-title {
+            font-size: 18px;
+          }
+
+          .sp-detail-desc-text {
+            font-size: 14px;
+          }
+
+          .sp-tag {
+            font-size: 12px;
           }
         }
 
