@@ -400,6 +400,8 @@ export default function GitHubPage() {
         .gh-stats-img-wrap.loaded { opacity: 1; }
         .gh-stats-img {
           width: 100%;
+          max-width: 100%;
+          height: auto;
           border-radius: 4px;
           display: block;
           filter: brightness(0.92);
@@ -610,6 +612,8 @@ export default function GitHubPage() {
           .gh-list-tag { font-size: 52px !important; margin: 0 0 8px 8px !important; }
           .gh-card { height: 76px !important; }
           .gh-title { font-size: 26px !important; }
+          .gh-lang-badge { font-size: 16px !important; padding: 3px 8px !important; }
+          .gh-subtitle { font-size: 14px !important; }
           .gh-detail-panel {
             position: relative !important;
             top: 0 !important;
@@ -619,7 +623,31 @@ export default function GitHubPage() {
             bottom: auto !important;
             margin: 8px 14px 16px !important;
             pointer-events: all !important;
+            max-height: none !important;
           }
+          .gh-profile-detail,
+          .gh-proj-detail {
+            max-height: none !important;
+          }
+          .gh-stats-img {
+            max-width: 100%;
+            height: auto;
+          }
+          .gh-detail-top {
+            grid-template-columns: 40px 1fr auto;
+            min-height: 60px;
+            padding: 0 12px;
+            gap: 8px;
+          }
+          .gh-detail-top-index { font-size: 28px; }
+          .gh-detail-top-title { font-size: 20px; }
+          .gh-detail-top-lang { font-size: 24px; }
+          .gh-profile-name { font-size: 32px; }
+          .gh-profile-role { font-size: 14px; }
+          .gh-profile-bio-item { font-size: 13px; }
+          .gh-stack-tag { font-size: 13px; }
+          .gh-detail-desc-text { font-size: 16px; }
+          .gh-tag { font-size: 14px; }
           .gh-footer { display: none; }
           .gh-mobile-controls {
             position: fixed;
@@ -633,6 +661,17 @@ export default function GitHubPage() {
             gap: 8px;
             pointer-events: all;
           }
+        }
+
+        @media (max-width: 430px) {
+          .gh-list-tag { font-size: 44px !important; }
+          .gh-card { height: 68px !important; }
+          .gh-title { font-size: 22px !important; }
+          .gh-lang-badge { font-size: 14px !important; }
+          .gh-subtitle { font-size: 12px !important; }
+          .gh-detail-top-title { font-size: 18px; }
+          .gh-profile-name { font-size: 28px; }
+          .gh-detail-desc-text { font-size: 14px; }
         }
 
         @media (min-width: 769px) and (max-width: 1200px) {
