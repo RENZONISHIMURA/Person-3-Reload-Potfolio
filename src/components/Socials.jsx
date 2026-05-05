@@ -590,7 +590,41 @@ export default function Socials() {
 
           .sc-bar,
           .sc-bar-red {
-            width: min(80vw, 480px) !important;
+            width: min(82vw, 480px) !important;
+          }
+
+          .sc-bar {
+            height: 58px !important;
+          }
+
+          .sc-bar-red {
+            height: 58px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar {
+            height: 72px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar-red {
+            height: 72px !important;
+          }
+
+          .sc-role {
+            font-size: 36px !important;
+          }
+
+          .sc-label {
+            font-size: 20px !important;
+            letter-spacing: 2px !important;
+          }
+
+          .sc-icon {
+            font-size: 18px !important;
+          }
+
+          .sc-char {
+            left: 80px !important;
+            max-width: 120px !important;
           }
 
           .sc-right-nav {
@@ -602,9 +636,9 @@ export default function Socials() {
             top: auto;
             left: 8px;
             right: 8px;
-            bottom: 58px;
+            bottom: 64px;
             height: auto;
-            max-height: 38vh;
+            max-height: 36vh;
             gap: 4px;
             padding: 4px 0;
             overflow-y: auto;
@@ -623,6 +657,11 @@ export default function Socials() {
           .sc-info-bar-count {
             margin-right: 10px;
             font-size: 14px;
+          }
+
+          .sc-info-bar-icon {
+            height: 48%;
+            margin-left: 10px;
           }
 
           .sc-footer {
@@ -645,16 +684,71 @@ export default function Socials() {
           .sc-mobile-portrait {
             display: block;
             position: fixed;
-            right: -8vw;
+            right: -10vw;
             top: 0;
             bottom: 0;
-            width: 52vw;
+            width: 54vw;
             object-fit: cover;
             object-position: top center;
             z-index: 5;
             pointer-events: none;
-            mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+            mask-image: linear-gradient(to left, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.52) 58%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.52) 58%, transparent 100%);
+          }
+        }
+
+        @media (max-width: 430px) {
+          .sc-bar,
+          .sc-bar-red {
+            width: min(78vw, 420px) !important;
+          }
+
+          .sc-bar {
+            height: 52px !important;
+          }
+
+          .sc-bar-red {
+            height: 52px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar {
+            height: 64px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar-red {
+            height: 64px !important;
+          }
+
+          .sc-role {
+            font-size: 30px !important;
+          }
+
+          .sc-label {
+            font-size: 17px !important;
+            letter-spacing: 1.5px !important;
+          }
+
+          .sc-char {
+            left: 60px !important;
+            max-width: 100px !important;
+          }
+
+          .sc-info-panel {
+            bottom: 60px;
+            max-height: 32vh;
+          }
+
+          .sc-info-bar-wrap {
+            height: 38px !important;
+          }
+
+          .sc-info-bar-text {
+            font-size: 13px;
+          }
+
+          .sc-mobile-portrait {
+            right: -12vw;
+            width: 56vw;
           }
         }
 
